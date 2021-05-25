@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.4.3)
+  - InAppPurchase (2.3.1)
+  - IQKeyboardManager (6.5.6)
+  - KeychainSwift (19.0.0)
+  - Kingfisher (6.3.0)
+  - lottie-ios (3.2.3)
+  - Player (0.14.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - InAppPurchase
+  - IQKeyboardManager
+  - KeychainSwift
+  - Kingfisher
+  - lottie-ios
+  - Player
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - InAppPurchase
+    - IQKeyboardManager
+    - KeychainSwift
+    - Kingfisher
+    - lottie-ios
+    - Player
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  InAppPurchase: 0a8e027080fb57556ca9e04768137d0d6971f87e
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  KeychainSwift: a06190cf933ad46b1e0abc3d77d29c06331715c7
+  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  Player: 37e0acc16ea1495fc241df88fe9f089367513331
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 0ef388e51825c4dcd517dd20f83c9cbae830d3f9
+
+COCOAPODS: 1.10.1

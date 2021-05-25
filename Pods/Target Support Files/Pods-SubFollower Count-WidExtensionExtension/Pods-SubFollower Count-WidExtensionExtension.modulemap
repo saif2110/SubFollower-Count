@@ -1,0 +1,6 @@
+framework module Pods_SubFollower_Count_WidExtensionExtension {
+  umbrella header "Pods-SubFollower Count-WidExtensionExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

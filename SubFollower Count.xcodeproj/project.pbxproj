@@ -37,7 +37,7 @@
 		5CC0332E265A5CC50051CC22 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0332C265A5CC40051CC22 /* Welcome.swift */; };
 		5CC03330265A5EDE0051CC22 /* welcome.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0332F265A5EDE0051CC22 /* welcome.json */; };
 		5CC03332265A61960051CC22 /* icons.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CC03331265A61960051CC22 /* icons.png */; };
-		E7E030220D3106EFE91D929C /* Pods_SubFollower_Count_WidExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBDD710C89F4EB1A438A814 /* Pods_SubFollower_Count_WidExtensionExtension.framework */; };
+		709FBF65DABD106AF9A4E2E8 /* Pods_SubFollower_Count_WidExtensionExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94CB291AB7CB7AF5281D24E /* Pods_SubFollower_Count_WidExtensionExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,9 +98,9 @@
 		5CC0332C265A5CC40051CC22 /* Welcome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		5CC0332F265A5EDE0051CC22 /* welcome.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = welcome.json; sourceTree = "<group>"; };
 		5CC03331265A61960051CC22 /* icons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icons.png; sourceTree = "<group>"; };
-		B141416D100D14D006F2AFED /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig"; path = "Target Support Files/Pods-SubFollower Count-WidExtensionExtension/Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig"; sourceTree = "<group>"; };
-		D2136D98322BB0C0E635AF5E /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubFollower Count-WidExtensionExtension.release.xcconfig"; path = "Target Support Files/Pods-SubFollower Count-WidExtensionExtension/Pods-SubFollower Count-WidExtensionExtension.release.xcconfig"; sourceTree = "<group>"; };
-		DDBDD710C89F4EB1A438A814 /* Pods_SubFollower_Count_WidExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubFollower_Count_WidExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1883DF1942B398141DCAA1 /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubFollower Count-WidExtensionExtension.release.xcconfig"; path = "Target Support Files/Pods-SubFollower Count-WidExtensionExtension/Pods-SubFollower Count-WidExtensionExtension.release.xcconfig"; sourceTree = "<group>"; };
+		C94CB291AB7CB7AF5281D24E /* Pods_SubFollower_Count_WidExtensionExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SubFollower_Count_WidExtensionExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E272DCCA673CDF86B470F782 /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig"; path = "Target Support Files/Pods-SubFollower Count-WidExtensionExtension/Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			files = (
 				5C2771A526550C7C0002D3D2 /* SwiftUI.framework in Frameworks */,
 				5C2771A326550C7C0002D3D2 /* WidgetKit.framework in Frameworks */,
-				E7E030220D3106EFE91D929C /* Pods_SubFollower_Count_WidExtensionExtension.framework in Frameworks */,
+				709FBF65DABD106AF9A4E2E8 /* Pods_SubFollower_Count_WidExtensionExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,8 +130,8 @@
 			children = (
 				567CD173576F6FB097FCCE18 /* Pods-SubFollower Count.debug.xcconfig */,
 				25A2D292F3267D77B8B7A66B /* Pods-SubFollower Count.release.xcconfig */,
-				B141416D100D14D006F2AFED /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */,
-				D2136D98322BB0C0E635AF5E /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */,
+				E272DCCA673CDF86B470F782 /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */,
+				7A1883DF1942B398141DCAA1 /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 				0750CA13A34CCC901CE1E4C7 /* Pods_SubFollower_Count.framework */,
 				5C2771A226550C7C0002D3D2 /* WidgetKit.framework */,
 				5C2771A426550C7C0002D3D2 /* SwiftUI.framework */,
-				DDBDD710C89F4EB1A438A814 /* Pods_SubFollower_Count_WidExtensionExtension.framework */,
+				C94CB291AB7CB7AF5281D24E /* Pods_SubFollower_Count_WidExtensionExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C2771B226550C7F0002D3D2 /* Build configuration list for PBXNativeTarget "WidExtensionExtension" */;
 			buildPhases = (
-				52E2AA5C3CDEB279FC1B7061 /* [CP] Check Pods Manifest.lock */,
+				AFD642B8319C69FDF668AA15 /* [CP] Check Pods Manifest.lock */,
 				5C27719D26550C7C0002D3D2 /* Sources */,
 				5C27719E26550C7C0002D3D2 /* Frameworks */,
 				5C27719F26550C7C0002D3D2 /* Resources */,
@@ -236,8 +236,8 @@
 				5C439434265253A8000E5FEB /* Sources */,
 				5C439435265253A8000E5FEB /* Frameworks */,
 				5C439436265253A8000E5FEB /* Resources */,
-				0227D718266AE0526D4D7351 /* [CP] Embed Pods Frameworks */,
 				5C2771B526550C7F0002D3D2 /* Embed App Extensions */,
+				06F2E7CEF04647242D421FD0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,7 +314,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0227D718266AE0526D4D7351 /* [CP] Embed Pods Frameworks */ = {
+		06F2E7CEF04647242D421FD0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +331,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SubFollower Count/Pods-SubFollower Count-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52E2AA5C3CDEB279FC1B7061 /* [CP] Check Pods Manifest.lock */ = {
+		AFD642B8319C69FDF668AA15 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,13 +439,13 @@
 /* Begin XCBuildConfiguration section */
 		5C2771B326550C7F0002D3D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B141416D100D14D006F2AFED /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */;
+			baseConfigurationReference = E272DCCA673CDF86B470F782 /* Pods-SubFollower Count-WidExtensionExtension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = WidExtensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = WidExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -454,7 +454,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SubFollower-Count.WidExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -465,13 +465,13 @@
 		};
 		5C2771B426550C7F0002D3D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2136D98322BB0C0E635AF5E /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */;
+			baseConfigurationReference = 7A1883DF1942B398141DCAA1 /* Pods-SubFollower Count-WidExtensionExtension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_ENTITLEMENTS = WidExtensionExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = WidExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -480,7 +480,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SubFollower-Count.WidExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -616,7 +616,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "SubFollower Count/SubFollower Count.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "SubFollower Count/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -624,7 +624,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -675,7 +675,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "SubFollower Count/SubFollower Count.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 959YZPX78D;
 				INFOPLIST_FILE = "SubFollower Count/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -683,7 +683,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",

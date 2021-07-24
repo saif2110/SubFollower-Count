@@ -75,11 +75,11 @@ struct Provider: IntentTimelineProvider {
                     
                     if KeychainSwift().allKeys.count > 0 {
                         
-                    let time = KeychainSwift().get("time")
-                    if (Int(time ?? "00") ?? 00) < Int(Date().timeIntervalSince1970 * 1000) {
-                        name = "Upgrade For Lifetime"
-                        subs = "Plan Expired"
-                      }
+                        let time = KeychainSwift().get("time")
+                        if (Int(time ?? "00") ?? 00) < Int(Date().timeIntervalSince1970 * 1000) {
+                            name = "Upgrade For Lifetime"
+                            subs = "Plan Expired"
+                        }
                     }
                     
                     
@@ -146,13 +146,12 @@ struct Provider2: IntentTimelineProvider {
                 
                 if KeychainSwift().allKeys.count > 0 {
                     
-                let time = KeychainSwift().get("time")
-                if (Int(time ?? "00") ?? 00) < Int(Date().timeIntervalSince1970 * 1000) {
-                    name = "Upgrade For Lifetime"
-                    followers = "Plan Expired"
-                  }
+                    let time = KeychainSwift().get("time")
+                    if (Int(time ?? "00") ?? 00) < Int(Date().timeIntervalSince1970 * 1000) {
+                        name = "Upgrade For Lifetime"
+                        followers = "Plan Expired"
+                    }
                 }
-                
                 
                 let url = URL(string: image)
                 KingfisherManager.shared.retrieveImage(with: url!) { result in
@@ -218,7 +217,7 @@ struct WidExtensionEntryView : View {
     
     var small: some View {
         ZStack{
-    
+            
             let bgColor = bgColour[UserDefaults.standard.getYoutubeThemeSelected()]
             let textColor = textColour[UserDefaults.standard.getYoutubeThemeSelected()]
             let thirdColor = thirdColour[UserDefaults.standard.getYoutubeThemeSelected()]
@@ -235,7 +234,7 @@ struct WidExtensionEntryView : View {
                     
                     Text(entry.name)
                         .font(.system(size: 14, weight: .bold)).foregroundColor(Color(UIColor(hexString: textColor)!))
-                    .padding(.top,4)
+                        .padding(.top,4)
                     
                     Text(entry.Subs)
                         .font(.system(size: 20, weight: .heavy)).foregroundColor(Color(UIColor.systemRed))
@@ -284,9 +283,9 @@ struct WidExtensionEntryView : View {
                 
                 VStack(alignment: .leading, spacing: 5){
                     Spacer()
-   
-                        Text(entry.name)
-                            .font(.system(size: 16, weight: .bold)).foregroundColor(Color(UIColor(hexString: textColor)!))
+                    
+                    Text(entry.name)
+                        .font(.system(size: 16, weight: .bold)).foregroundColor(Color(UIColor(hexString: textColor)!))
                         .padding(.top,4)
                     
                     
@@ -345,10 +344,10 @@ struct WidExtensionEntryViewTwitter : View {
                         .clipped()
                         .clipShape(Circle())
                         .overlay(Circle().stroke(Color(TwitterBlue), lineWidth: 1.5))
-
+                    
                     Text(entry.name)
                         .font(.system(size: 16, weight: .bold)).foregroundColor(Color(UIColor(hexString: textColor)!))
-                    .padding(.top,4)
+                        .padding(.top,4)
                     
                     
                     Text(entry.followers)
@@ -400,10 +399,10 @@ struct WidExtensionEntryViewTwitter : View {
                 
                 VStack(alignment: .leading, spacing: 5){
                     Spacer()
-                
+                    
                     Text(entry.name)
                         .font(.system(size: 16, weight: .bold)).foregroundColor(Color(UIColor(hexString: textColor)!))
-                    .padding(.top,4)
+                        .padding(.top,4)
                     
                     Text("Follow - " + entry.followers)
                         .font(.system(size: 18, weight: .heavy)).foregroundColor(Color(TwitterBlue))

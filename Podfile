@@ -14,7 +14,7 @@ target 'SubFollower Count' do
   pod 'Player'
   pod 'lottie-ios'
   pod 'KeychainSwift'
-  pod "InAppPurchase"
+  pod 'InAppPurchase'
 
   target 'WidExtensionExtension' do
     

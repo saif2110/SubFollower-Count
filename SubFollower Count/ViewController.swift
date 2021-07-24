@@ -95,16 +95,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if UserDefaults.standard.gettimesOpen() == 1 {
             DispatchQueue.main.async {
                 self.present(Welcome(), animated: true, completion: nil)
             }
+        }else{
+            DispatchQueue.main.async {
+                
+                if !UserDefaults.standard.isProMember() {
+                    self.present(InAppVC(), animated: true, completion: nil)
+                }
+                
+            }
         }
         
-        if UserDefaults.standard.gettimesOpen() == 2 ||  UserDefaults.standard.gettimesOpen() == 8 {
-            requestToRate()
-        }
         
         
         ATTrackingManager.requestTrackingAuthorization(completionHandler: { status in
@@ -170,18 +175,18 @@ class ViewController: UIViewController {
     
     
     func requestToRate() {
-            if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
-                SKStoreReviewController.requestReview(in: scene)
-            }
+        if let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
     }
     
     var whatSelected = "youtube" //for theme
     @IBAction func segment(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
-
+            
             let main_string = "SubFollow Widget"
             let string_to_color = "Widget"
-
+            
             let range = (main_string as NSString).range(of: string_to_color)
             let attributedString = NSMutableAttributedString(string:main_string)
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.systemRed , range: range)
@@ -213,7 +218,7 @@ class ViewController: UIViewController {
             
             let main_string = "SubFollow Widget"
             let string_to_color = "Widget"
-
+            
             let range = (main_string as NSString).range(of: string_to_color)
             let attributedString = NSMutableAttributedString(string:main_string)
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: TwitterBlue , range: range)
@@ -249,7 +254,6 @@ class ViewController: UIViewController {
     
     @IBAction func submit(_ sender: UIButton) {
         
-        
         if idText.text!.count > 0 {
             
             if sender.tag == 1 {
@@ -258,6 +262,8 @@ class ViewController: UIViewController {
             }else{
                 TwitterAlgo(username: idText.text!)
             }
+            
+            requestToRate()
             
         }else{
             
@@ -333,7 +339,7 @@ class ViewController: UIViewController {
                 
                 self.smallWidgetTitel.text = titel
                 self.bigWidgetTitel.text = titel
-                self.smallWidgetSubFollowTitel.text = String(subs)
+                self.smallWidgetSubFollowTitel.text = subs.formattedWithSeparator
                 self.bigWidgetSubFollowTitel.text = "Followers - " + String(subs)
                 self.smallWidgetBigImage.kf.setImage(with: URL(string: image))
                 self.bigWidgetBigImage.kf.setImage(with: URL(string: image))
@@ -366,21 +372,21 @@ class ViewController: UIViewController {
     
     func setThemeFor(Themefor:String = "youtube",index:Int) {
         
-            smallWidget.backgroundColor = UIColor(hexString: bgColour[index])
-            mediumWidget.backgroundColor = UIColor(hexString: bgColour[index])
-            
-            smallWidgetTitel.textColor = UIColor(hexString: textColour[index])
-            bigWidgetTitel.textColor = UIColor(hexString: textColour[index])
-            
-            smallWidgetthird.textColor = UIColor(hexString: thirdColour[index])
-            
-            bigWidgetthird.textColor = UIColor(hexString: thirdColour[index])
-            
-            if Themefor == "youtube"{
-                UserDefaults.standard.setYoutubeThemeSelected(value: index)
-            }else{
-                UserDefaults.standard.setTwitterThemeSelected(value: index)
-            }
+        smallWidget.backgroundColor = UIColor(hexString: bgColour[index])
+        mediumWidget.backgroundColor = UIColor(hexString: bgColour[index])
+        
+        smallWidgetTitel.textColor = UIColor(hexString: textColour[index])
+        bigWidgetTitel.textColor = UIColor(hexString: textColour[index])
+        
+        smallWidgetthird.textColor = UIColor(hexString: thirdColour[index])
+        
+        bigWidgetthird.textColor = UIColor(hexString: thirdColour[index])
+        
+        if Themefor == "youtube"{
+            UserDefaults.standard.setYoutubeThemeSelected(value: index)
+        }else{
+            UserDefaults.standard.setTwitterThemeSelected(value: index)
+        }
     }
     
     

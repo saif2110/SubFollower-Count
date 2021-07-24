@@ -11,9 +11,9 @@ import SwiftyJSON
 
 let TwitterBlue:UIColor = #colorLiteral(red: 0.2153705359, green: 0.6007890105, blue: 0.9002060294, alpha: 1)
 
-let bgColour = ["#fefffeff","#f2d4d4ff","#121212ff"]
-let textColour = [UIColor.black.htmlRGBaColor,"#cb0e74ff","#ffffffff"]
-let thirdColour = [UIColor.lightGray.htmlRGBaColor,"#cb0e74ff",#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).htmlRGBaColor]
+let bgColour = ["#fefffeff",#colorLiteral(red: 0.1675025865, green: 0.1691447687, blue: 0.1691447687, alpha: 1).htmlRGBaColor,"#121212ff"]
+let textColour = [#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).htmlRGBaColor,#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).htmlRGBaColor,"#ffffffff"]
+let thirdColour = [UIColor.lightGray.htmlRGBaColor,#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).htmlRGBaColor,#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).htmlRGBaColor]
 
 
 enum UserDefaultsKeys : String {
@@ -36,8 +36,6 @@ enum UserDefaultsKeys : String {
 }
 //setisProMember
 
-
-
 extension UserDefaults {
     
     func setyoutubeLink(value: String){
@@ -57,7 +55,7 @@ extension UserDefaults {
     
     
     func gettwitterLink() -> String{
-        return UserDefaults(suiteName: "group.SubFollower")!.string(forKey: UserDefaultsKeys.twitterLink.rawValue) ?? "elonmusk"
+        return UserDefaults(suiteName: "group.SubFollower")!.string(forKey: UserDefaultsKeys.twitterLink.rawValue) ?? "MrBeast"
     }
     
     

@@ -31,7 +31,7 @@ func postWithParameterTwitter(username:String,completionhandler:@escaping (JSON,
     
     let url =  "https://api.twitter.com/1.1/users/show.json?screen_name="+username
     
-    let header : HTTPHeaders = ["Content-Type":"application/json","Authorization":"Bearer AAAAAAAAAAAAAAAAAAAAANHpPgEAAAAAvppDmCcImj2K4C15q9JnViP8QUU%3D0TyqYDsBwvgngXRQBKW0JmFmu3CpHTUmU6nPfxKV3evF0hRDto"]
+    let header : HTTPHeaders = ["Content-Type":"application/json","Authorization":"Bearer AAAAAAAAAAAAAAAAAAAAAOPrqQEAAAAA3WHyZdVu7DcjpsPXVmRsJQiBFuA%3DHjcbVjFQsLztPgsgyIhBfLZ4pDqUCMjqtiTmZbbajQll46uMZq"]
     
     AF.request(url,method:.get,encoding: JSONEncoding.default,headers:header).responseJSON {
         response in

@@ -88,7 +88,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextField!
     
     @IBOutlet weak var themeSegment: UISegmentedControl!
-    
     @IBOutlet weak var quetion: UIButton!
     @IBOutlet weak var setting: UIButton!
     
@@ -346,8 +345,19 @@ class ViewController: UIViewController {
                 self.bigWidgetTotalTitel.text = "Following - " + String(vidoCount)
                 self.smallWidgetTotalTitel.text = "Total Followers"
                 
-                self.smallWidgetSmallImage.image = #imageLiteral(resourceName: "twitter_small")
-                self.bigWidgetSmallImage.image = #imageLiteral(resourceName: "twitter_small")
+              
+              if UserDefaults.standard.getTwitterThemeSelected() == 0 {
+                
+                self.smallWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.black)
+                self.bigWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.black)
+                
+              }else{
+                self.smallWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.white)
+                self.bigWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.white)
+                
+              }
+              
+                
                 
             }else{
                 
@@ -377,7 +387,34 @@ class ViewController: UIViewController {
         
         smallWidgetTitel.textColor = UIColor(hexString: textColour[index])
         bigWidgetTitel.textColor = UIColor(hexString: textColour[index])
+      
+      if Themefor == "twitter" {
+        //make even follower (middle) text theme wise i.e black,white,white cuz its no more blue (twitter color)
+        smallWidgetSubFollowTitel.textColor = UIColor(hexString: textColour[index])
+        bigWidgetSubFollowTitel.textColor = UIColor(hexString: textColour[index])
         
+        
+        // twitter image color according to theme black and white
+      
+        if index == 0 {
+          
+          self.smallWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.black)
+          self.bigWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.black)
+          
+        }else{
+          
+          self.smallWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.white)
+          self.bigWidgetSmallImage.image = #imageLiteral(resourceName: "twitter").withTintColor(.white)
+          
+        }
+        
+      }
+      
+      
+      
+      
+      
+  
         smallWidgetthird.textColor = UIColor(hexString: thirdColour[index])
         
         bigWidgetthird.textColor = UIColor(hexString: thirdColour[index])
@@ -387,6 +424,9 @@ class ViewController: UIViewController {
         }else{
             UserDefaults.standard.setTwitterThemeSelected(value: index)
         }
+      
+      
+      
     }
     
     

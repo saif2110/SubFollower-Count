@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         iap.addTransactionObserver(fallbackHandler: {_ in
             // Handle the result of payment added by Store
             // See also `InAppPurchase#purchase`
-            print("what the hell is this")
         })
         
         return true

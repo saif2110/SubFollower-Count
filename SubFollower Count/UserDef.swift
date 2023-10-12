@@ -9,10 +9,12 @@
 import Foundation
 import SwiftyJSON
 
-let TwitterBlue:UIColor = #colorLiteral(red: 0.2153705359, green: 0.6007890105, blue: 0.9002060294, alpha: 1)
+let TwitterBlue:UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+
+let TwitterDarkTextColor:UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
 let bgColour = ["#fefffeff",#colorLiteral(red: 0.1675025865, green: 0.1691447687, blue: 0.1691447687, alpha: 1).htmlRGBaColor,"#121212ff"]
-let textColour = [#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).htmlRGBaColor,#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).htmlRGBaColor,"#ffffffff"]
+let textColour = [#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).htmlRGBaColor,"#ffffffff","#ffffffff"]
 let thirdColour = [UIColor.lightGray.htmlRGBaColor,#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).htmlRGBaColor,#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1).htmlRGBaColor]
 
 

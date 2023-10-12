@@ -351,7 +351,7 @@ struct WidExtensionEntryViewTwitter : View {
                     
                     
                     Text(entry.followers)
-                        .font(.system(size: 20, weight: .heavy)).foregroundColor(Color(TwitterBlue))
+                        .font(.system(size: 20, weight: .heavy)).foregroundColor(Color(UIColor(hexString: textColor)!))
                     
                     Text("Total Followers")
                         .font(.system(size: 12, weight: .medium)).foregroundColor(Color(UIColor(hexString: thirdColor)!))
@@ -370,7 +370,7 @@ struct WidExtensionEntryViewTwitter : View {
                 Spacer()
                 VStack{
                     
-                    Image(uiImage: #imageLiteral(resourceName: "twitter_small"))
+                  Image(uiImage: #imageLiteral(resourceName: "twitter_small")).foregroundColor(Color(UIColor(hexString: textColor)!))
                     Spacer()
                 }.padding([.trailing,.top],10).layoutPriority(0)
             }
@@ -405,7 +405,7 @@ struct WidExtensionEntryViewTwitter : View {
                         .padding(.top,4)
                     
                     Text("Follow - " + entry.followers)
-                        .font(.system(size: 18, weight: .heavy)).foregroundColor(Color(TwitterBlue))
+                        .font(.system(size: 18, weight: .heavy)).foregroundColor(Color(UIColor(hexString: textColor)!))
                     
                     Text("Following - " + entry.following)
                         .font(.system(size: 13, weight: .medium)).foregroundColor(Color(UIColor(hexString: thirdColor)!))
@@ -419,6 +419,7 @@ struct WidExtensionEntryViewTwitter : View {
                 VStack{
                     
                     Image(uiImage: #imageLiteral(resourceName: "twitter_small"))
+                    .foregroundColor(Color(UIColor(hexString: textColor)!))
                     Spacer()
                 }.padding([.trailing,.top],10).layoutPriority(0)
             }
